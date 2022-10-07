@@ -1,0 +1,108 @@
+
+:root{
+    --bg: #fff;
+    --bg-card: #E5E5E5;
+    --bg-nav: #0D28A6;
+    --bg-onclic: #CFD4ED;
+    --font: #8A8A8A;
+    --font-filter: #AEB7E1;
+
+
+}
+.side-navbar {
+    margin-top: -5em;
+    width: 5%;
+    height: 100vh;
+    background: var(--bg-nav);
+}
+.bi-house-door, .bi-truck{
+    font-size: 30px;
+}
+.nav-item:hover{
+    background: var(--bg-onclic);
+}
+.navbar{
+    margin-left: 82px;
+}
+.button-profile{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-onclic);
+}
+.search{
+    margin-left: 830px;
+}
+.btn-outline-success{
+    color: var(--bg-nav);
+    border-color: var(--bg-nav);
+}
+.btn-outline-success:hover{
+    background: var(--bg-nav);
+}
+.side-menu{
+    margin-left: 82px;
+    margin-top: -710px;
+    height: 100vh;
+    width: 220px;
+}
+ul li a{
+    color: var(--font);
+}
+ul li a:hover{
+    color: black;
+}
+.show{
+    margin-left: 300px;
+    margin-top: -785px;
+    height: 100vh;
+    background-color: var(--bg-card);
+}
+.bi-list{
+    font-size: 30px;
+    margin-left: 95px;
+}
+/* .bi-plus{
+    font-size: 30px;
+} */
+.addCar{
+    background-color: #0D28A6;
+    padding: 6px;
+    margin: 1vh 0vh 1vh 0vh;
+}
+.btn-filter{
+    color: var(--font-filter);
+    border-color: var(--font-filter);
+}
+.btn-delete{
+    color: #FA2C5A;
+    background-color: #fff;
+    border-color: #FA2C5A;
+}
+.btn-edit{
+    background-color: #5CB85F;
+    color: #fff;
+}
+.container-show {
+    background-color: var(--bg-card);
+}
+.btn-save{
+    background-color: var(--bg-nav);
+    color: var(--bg);
+    margin-left: -120px;
+}
+.btn-cancel{
+    border-color: var(--bg-nav);
+    color: var(--bg-nav);
+}
+.btn-cancle-save{
+    margin-top: 290px;
+}
+.inline{
+    display: inline;
+}
+/* .input-form{
+    margin-left: 50px;
+} */
+
+

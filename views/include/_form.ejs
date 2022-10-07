@@ -1,0 +1,48 @@
+<div class="container">
+    <form action="/api/cars" method="POST" id="add_car">
+        <div class="new_car ms-3">
+            <div class="bg-body py-4">
+                <div class="form-group">
+                    <label for="name" class="text-dark">Nama*</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="name" value="" placeholder="Avanza">
+                </div>
+                <div class="form-group">
+                    <label for="price" class="text-dark">Sewa Per Hari*</label>
+                    <input type="text" name="price" value="" placeholder="Rp 0,-">
+                </div>
+                <div class="form-group ">
+                    <label for="size" class="">Ukuran*</label>
+                    <div class="radio inline">
+                        <input type="radio" id="radio-2" name="size" value="Small">
+                        <label for="radio-2" class="radio-label">Small</label>
+                    </div>
+                    <div class="radio inline">
+                        <input type="radio" id="radio-3" name="size" value="Medium">
+                        <label for="radio-3" class="radio-label">Medium</label>
+                    </div>
+                    <div class="radio inline">
+                        <input type="radio" id="radio-4" name="size" value="Large">
+                        <label for="radio-4" class="radio-label">Large</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="image" class="text-dark">Foto*</label>
+                    <input type="file" id="myfile" name="image" value="">
+                </div>
+            </div>
+            <div class="row btn-cancle-save">
+                <div class="col-md-2 ">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-cancel ">Cancel</button>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+  </div>

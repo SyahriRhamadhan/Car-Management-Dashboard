@@ -1,0 +1,59 @@
+<%- include('include/_header') %> 
+<div class="show">
+    <div class="container">
+      <div class="py-4 ms-3">
+        <a href="/" class="text-decoration-none text-dark">Cars<i class="bi bi-chevron-right mx-2"></i></a><a href="/" class="text-decoration-none text-dark">list Car<i class="bi bi-chevron-right mx-2"></i></a><a href="#" class="text-decoration-none text-dark">Update a Car</i></a>
+      </div>
+      <h4 class="fw-bold mt-2 ms-3 ">Update a Car</h1>
+    </div>
+
+    <div class="container">
+      <form action="/api/cars" method="POST" id="update_car">
+          <div class="new_car ms-3">
+              <div class=" py-4 bg-body">
+                  <div class="form-group">
+                      <label for="name" class="text-dark">Nama*</label>
+                      <input type="hidden" name="id" value="<%= car._id %> ">
+                      <input type="text" name="name" value="<%= car.name %>"  placeholder="Avanza">
+                  </div>
+                  <div class="form-group">
+                      <label for="price" class="text-dark">Sewa Per Hari*</label>
+                      <input type="text" name="price" value="<%= car.price %>"  placeholder="Rp 0,-">
+                  </div>
+                  <div class="form-group">
+                      <label for="size" class="text-dark">Ukuran*</label>
+                      <div class="radio inline">
+                          <input type="radio" id="radio-2" name="size" value="Small" <%= car.size =='Small'?'checked':'' %>>
+                          <label for="radio-2" class="radio-label">Small</label>
+                      </div>
+                      <div class="radio inline">
+                          <input type="radio" id="radio-3" name="size" value="Medium" <%= car.size =='Medium'?'checked':'' %>>
+                          <label for="radio-3" class="radio-label">Medium</label>
+                      </div>
+                      <div class="radio inline">
+                          <input type="radio" id="radio-4" name="size" value="Large" <%= car.size =='Large'?'checked':'' %>>
+                          <label for="radio-4" class="radio-label">Large</label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="image" class="text-dark">Foto*</label>
+                    <input type="file" id="myfile" name="image" value="<%= car.image %>">
+                  </div>
+              </div>
+              <div class="row btn-cancle-save">
+                <div class="col-md-2 ">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-cancel ">Cancel</button>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-save">Save</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+<%- include('include/_footer') %> 
