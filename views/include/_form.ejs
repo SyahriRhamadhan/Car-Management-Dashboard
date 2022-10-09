@@ -2,43 +2,45 @@
     <form action="/api/cars" method="POST" id="add_car">
         <div class="new_car ms-3">
             <div class="bg-body py-4">
-                <div class="form-group">
-                    <label for="name" class="text-dark">Nama*</label>
-                    <input type="hidden" name="id" value="">
-                    <input type="text" name="name" value="" placeholder="Avanza">
-                </div>
-                <div class="form-group">
-                    <label for="price" class="text-dark">Sewa Per Hari*</label>
-                    <input type="text" name="price" value="" placeholder="Rp 0,-">
-                </div>
-                <div class="form-group ">
-                    <label for="size" class="">Ukuran*</label>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-2" name="size" value="Small">
-                        <label for="radio-2" class="radio-label">Small</label>
-                    </div>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-3" name="size" value="Medium">
-                        <label for="radio-3" class="radio-label">Medium</label>
-                    </div>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-4" name="size" value="Large">
-                        <label for="radio-4" class="radio-label">Large</label>
+                <div class="row mb-4 ms-3">
+                    <label for="name" class="text-dark col-md-2">Nama<span class="text-danger">*</span></label>
+                    <div class="col-md-6 d-inline">
+                        <input type="hidden" name="id" value="">
+                        <input type="text" class="form-control" name="name" value="" placeholder="Avanza" required>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="image" class="text-dark">Foto*</label>
-                    <input type="file" id="myfile" name="image" value="">
+                <div class="row mb-4 ms-3">
+                    <label for="price" class="text-dark col-md-2">Sewa Per Hari<span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="price" value="" placeholder="Rp 0,-" required>
+                    </div>
+                </div>
+                <div class="row ms-3">
+                    <label for="size" class="col-sm-2 col-form-label">Ukuran <span class="text-danger">*</span></label>
+                    <div class="col-sm-6">
+                        <select class="form-select form-select-md mb-3" name="size"id="size" aria-label=".form-select-lg example" required>
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row  ms-3 mt-1">
+                    <label for="image" class="col-md-2 col-form-label">Foto <span class="text-danger">*</span></label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="file" name="image" id="image" required>
+                        <small>File size max. 2MB</small>
+                    </div>
                 </div>
             </div>
-            <div class="row btn-cancle-save">
+            <div class="row btn-cancle-save ms-1">
                 <div class="col-md-2 ">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-cancel ">Cancel</button>
+                    <div class="row">
+                        <button type="reset" class="btn btn-cancel ">Cancel</button>
                     </div>
                 </div>
                 <div class="col-md-2 ">
-                    <div class="form-group">
+                    <div class="row">
                         <button type="submit" class="btn btn-save">Save</button>
                     </div>
                 </div>

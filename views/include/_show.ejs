@@ -1,15 +1,15 @@
-
-        <% for(var i = 0;i<cars.length;i++){%> 
-      <div class="col-md-3">
+<% for(var i = 0;i<cars.length;i++){%> 
+      <div class="col-md-3 ps-3">
         <div class="card ms-2 mt-4" style="width: 18rem;">
-          <img src="<%= cars[i].image %> /img/image 1.png" class="card-img-top" alt="...">
-          <div class="card-body ">
-            <tr>
-              <td><p class="card-title"><%= cars[i].name %></p></td><br>
-              <td><p class="fw-bold">RP <%= cars[i].price %>/ hari </p> </td><br>
-              <!-- <td><p class="me-2">Ukuran <%= cars[i].size %></p> </td><br> -->
-              
-              <td><p><i class="bi bi-clock me-2"></i>Update at:<%= cars[i].updatedAt  %></p> </td>
+          <img class="pt-4 px-4" src="<%= cars[i].image %> /img/image 1.png" class="card-img-top" alt="...">
+          <div class="card-body  ">
+            <tr class="">
+              <td><p class="card-title  " style="font-weight: 400;font-size: 16px;line-height: 20px;"><%= cars[i].name %></p></td>
+              <td><p class="fw-bold " style="font-size: 16px;line-height: 24px;">RP <%= cars[i].price %>/ hari </p> </td>
+              <!-- <td><p class="me-2">Ukuran <%= cars[i].size %></p> </td> -->
+              <td><p><i class="bi bi-clock me-2" style="font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;"></i>Update at: <%= cars[i].updatedAt  %>.</p> </td>
               <td>
                 <div class=" row">
                   <div class="col-md-6 ">
@@ -24,4 +24,4 @@
           </div>
         </div>
       </div>
-    <% } %> 
+<% } %> 

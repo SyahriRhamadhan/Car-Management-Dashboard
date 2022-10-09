@@ -16,7 +16,7 @@ var schema = new mongoose.Schema({
     },
     size: String
     
-},{ timestamps: { createdAt: false, updatedAt: true } })
+},{ timestamps: { createdAt: false, updatedAt:  true }})
 //,{ timestamps: { createdAt: false, updatedAt: true } }
 // { createdAt: false, updatedAt: true }
 

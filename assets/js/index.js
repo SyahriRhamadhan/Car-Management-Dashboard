@@ -1,5 +1,5 @@
 $("#add_car").submit(function(event){
-    alert("data inserted sucessfully")
+    alert("Data Berhasil Di Simpan")
 })
 
 $("#update_car").submit(function(event){
@@ -18,7 +18,7 @@ $("#update_car").submit(function(event){
         "data" : data
     }
     $.ajax(request).done(function(response){
-        alert("data updated succeffully")
+        alert("Data Berhasil Di Update")
     })
 })
 
@@ -30,9 +30,9 @@ if(window.location.pathname=="/"){
             "url":`http://localhost:3000/api/cars/${id}`,
             "method":"DELETE"
         }
-        if(confirm("do you really want to delete this record?")){
+        if(confirm("Menghapus Data Mobil")){
             $.ajax(request).done(function(response){
-                alert("data deleted succeffully")
+                alert("Data Berhasil Di Hapus")
                 location.reload()
             })
         }
