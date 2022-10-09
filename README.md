@@ -13,6 +13,13 @@ referensi https://www.youtube.com/watch?v=W1Kttu53qTg&ab_channel=DailyTuition
    contoh: MONGO_URL= mongodb://localhost:27017/Car_Management_Dashboard
 3. npm start
 
+# Link
+
+1. Homepage= http://localhost:3000
+2. Add-car= http://localhost:3000/add-car
+3. Update-car= http://localhost:3000/update-car?id=
+4. Delete-car= http://localhost:3000
+
 # End-point
 
 1. menampilkan car GET= http://localhost:3000/api/cars
