@@ -5,11 +5,13 @@ referensi https://www.youtube.com/watch?v=W1Kttu53qTg&ab_channel=DailyTuition
 
 # Sebelum Running
 
-instalasi modul= npm i axios body-parser dotenv ejs express mongoose morgan nodemon
-dan buat file config.env dengan isi
-PORT:3000
-MONGO_URL="connection milik kamu"
-contoh: MONGO_URL= mongodb://localhost:27017/Car_Management_Dashboard
+1. Resolusi Layar 1624 X 775px atau seting resolusi broswer
+2. instalasi modul= npm i axios body-parser dotenv ejs express mongoose morgan nodemon
+   dan buat file config.env dengan isi
+   PORT:3000
+   MONGO_URL="connection milik kamu"
+   contoh: MONGO_URL= mongodb://localhost:27017/Car_Management_Dashboard
+3. npm start
 
 # End-point
 

@@ -42,7 +42,7 @@ body{
     border-color: var(--bg-nav);
 }
 .btn-outline-success:hover{
-    background: var(--bg-nav);
+    background-color: var(--bg-onclic);
 }
 .side-menu{
     margin-left: 82px;
@@ -78,6 +78,9 @@ ul li a:hover{
     color: var(--font-filter);
     border-color: var(--font-filter);
 }
+.btn-filter:hover{
+    background-color: var(--font-filter);
+}
 .btn-delete{
     width: 100%;
     color: #FA2C5A;
@@ -106,6 +109,3 @@ ul li a:hover{
 .btn-cancle-save{
     margin-top: 190px;
 }
-
-
-
