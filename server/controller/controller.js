@@ -20,7 +20,7 @@ exports.create=(req,res)=>{
         .save(car)
         .then(data =>{
             //res.send(data)
-            res.redirect('/add-car')
+            res.redirect('/')
         })
         .catch(err =>{
             res.status(500).send({
